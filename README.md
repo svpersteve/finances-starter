@@ -14,6 +14,21 @@ statements and kept up to date with Claude Code. It gives you:
 
 Nothing leaves your computer. Your documents stay in `sources/`, which isn't committed to git.
 
+## Keeping your copy private, and getting updates
+
+Once you start using it, your copy holds your finances (accounts, rules, budget, debts). **Never push it back to
+the repo you cloned it from.** Set it up like this after cloning:
+
+```sh
+git remote rename origin upstream          # the shared starter kit: pull updates from here, never push
+git remote set-url --push upstream no-push # makes an accidental push fail
+# optional: back up your own copy to a PRIVATE repo of your own
+# git remote add origin git@github.com:<you>/<your-private-repo>.git
+```
+
+To get improvements to the scripts and skills later: `git pull upstream main`. Your own data is in the CSVs and
+`sources/`, so updates rarely clash with it. If `CLAUDE.md` clashes, keep your "About me" section.
+
 ## Getting started
 
 1. Install [Claude Code](https://claude.com/claude-code), plus Python 3 and poppler (for reading PDFs). On a Mac:
