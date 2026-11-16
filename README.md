@@ -16,8 +16,13 @@ Nothing leaves your computer. Your documents stay in `sources/`, which isn't com
 
 ## Keeping your copy private, and getting updates
 
-Once you start using it, your copy holds your finances (accounts, rules, budget, debts). **Never push it back to
-the repo you cloned it from.** Set it up like this after cloning:
+Once you start using it, your copy holds your finances (accounts, rules, budget, debts).
+
+**Got it as a zip?** Unzip it, then in the folder run `git init && git add -A && git commit -m "Starter kit"` so
+Claude can track your changes. If you ever push it anywhere, make that repo private. Updates come as a new zip:
+ask Claude to merge it in, keeping your CSVs and your "About me" section.
+
+**Cloned it?** **Never push it back to the repo you cloned it from.** Set it up like this after cloning:
 
 ```sh
 git remote rename origin upstream          # the shared starter kit: pull updates from here, never push
