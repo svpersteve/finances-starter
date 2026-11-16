@@ -1,0 +1,12 @@
+# Generated: rebuild with python3 scripts/build.py
+data/
+
+# Your documents and anything waiting to be filed. They hold account numbers and personal details,
+# so they stay out of git unless you decide otherwise (see CLAUDE.md, "Backups and privacy").
+inbox/*
+!inbox/.gitkeep
+sources/
+
+.DS_Store
+__pycache__/
+*.pyc
